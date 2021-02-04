@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="backgroundfor"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/buttonOfSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:onClick="setClick"
+        android:text="findimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOfSecond"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOfSecond"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOfSecond"
+        app:layout_constraintStart_toStartOf="@+id/buttonOfSecond"
+        app:layout_constraintTop_toBottomOf="@+id/IMG" />
+
+    <ImageView
+        android:id="@+id/IMG"
+        android:layout_width="225dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="60dp"
+        android:background="backgroundfor"
+        android:onClick="setClick2"
+        app:layout_constraintBottom_toTopOf="@+id/Edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EtText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="500dp"
+        android:text="select_image"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
